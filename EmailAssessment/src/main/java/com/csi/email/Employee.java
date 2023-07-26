@@ -6,7 +6,7 @@ public class Employee {
 	static String firstName;
 	static String lastName;
 	static String email;
-	Scanner scanner = new Scanner(System.in);
+	//Scanner scanner = new Scanner(System.in);
 
 	public Employee(String firstName, String lastName) {
 		this.firstName = firstName;
