@@ -1,13 +1,10 @@
 package com.csi.email;
-
 import java.util.Scanner;
-
 public class Employee {
 	static String firstName;
 	static String lastName;
 	static String email;
 	//Scanner scanner = new Scanner(System.in);
-
 	public Employee(String firstName, String lastName) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -34,7 +31,6 @@ public class Employee {
 			break;
 		}
 	}
-
 	private static String generatePassword() {
 		String number = "0123456789";
 		String capitalLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -49,12 +45,10 @@ public class Employee {
 		}
 		return new String(password);
 	}
-
 	private static String generateEmailAddress(String department) {
 		email= firstName.toLowerCase() + lastName.toLowerCase() + "@" + department + "." + "csi.com";
 		showCredentials(email);
 		return email;
-
 	}
 
 	public static void showCredentials(String emial) {
